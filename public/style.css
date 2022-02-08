@@ -1,0 +1,38 @@
+/* colors
+DARK PRIMARY COLOR  #00796B
+LIGHT PRIMARY COLOR  #B2DFDB
+PRIMARY COLOR   #009688
+TEXT / ICONS   #FFFFFF
+ACCENT COLOR   #FF9800
+PRIMARY TEXT   #212121
+SECONDARY TEXT  #757575
+DIVIDER COLOR   #BDBDBD
+*/
+
+
+body{
+    margin: 0;
+    background-color: #B2DFDB;
+    color: #212121
+}
+
+.center{
+    text-align: center;
+}
+
+.space-50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav{
+    background-color: #00796B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6vh;
+}
+
+.list-group-container{
+    display:none
+}
