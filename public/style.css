@@ -20,9 +20,9 @@ body{
     text-align: center;
 }
 
-.space-50{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.space-100{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 nav{
@@ -35,4 +35,27 @@ nav{
 
 .list-group-container{
     display:none
+}
+
+.home h3{
+    margin-bottom: 30px;
+}
+
+
+
+.home-bottom{
+    display: flex;
+    justify-content: flex-end;
+    height: 50vh;
+    padding: 10vh;
+    /* margin-right: 30px; */
+}
+
+.btn-add{
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn-add img{
+    width: 50px;
 }
