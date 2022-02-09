@@ -39,69 +39,91 @@
     </nav>
   </header>
 
-
-  <section class="home space-100" id="home-empty">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 center">
-          <h3>Unfortunately, there is no products in your list.</h3>
-          <h4>Add your first item 🤗</h4>
+  <div class="content">
+    <section class="section-form" id="section-popup-form">
+      <div class="container popup-form space-100 center" >
+        <div class="row">
+          <h3>To but list form</h3>
+          <form action="#" id="buy-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="formTitle" placeholder="Type your product title" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" id='formType' required>
+                <option selected>Select products' type</option>
+                <option id='Clothing' value="👘">Clothing</option>
+                <option id='Technology' value="📺">Technology</option>
+                <option id='Sumermarket' value="🛒">Sumermarket</option>
+                <option id='Flights' value="✈">Flights</option>
+                <option id='Others' value="🎁">Others</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="formDescription" placeholder="Give me a litle description of your product 🙏" rows="3"></textarea>
+            </div>
+            <div class="form-button center">
+            
+            <button type="button" class="btn btn-form" id="add-btn-form">Add</button>
+            </div>  
+          </form>
         </div>
       </div>
-    </div>
-    <div class="container home-bottom">
-     <div class="row">
-      <div class="home-btn-add">
-        <button class="btn-add" id="btn-add"><span>➕</span></button>
+    </section>
+  </div>
+
+  <div class="content-page">
+    <section class="section-home space-100" id="section-home-empty">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 center">
+            <h3>Unfortunately, there is no products in your list.</h3>
+            <h4>Add your first item 🤗</h4>
+          </div>
+        </div>
       </div>
-     </div>
-    </div>
-
-  </section>
-
-  <section class="section-list">
-    <div class="container list-group-container" id="container-list">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <ul class="list-group" id="ul-container">
-            <li class="list-group-item active" aria-current="true">An active item</li>
-          </ul>
-          <button type="button" class="btn btn-primary" id="add">Add</button>
+      <div class="container home-bottom">
+        <div class="row">
+          <div class="home-btn-add">
+            <button class="btn-add" id="btn-add"><span>➕</span></button>
+          </div>
         </div>
-        <div class="col-md-4"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section-form">
-    <div class="container popup-form space-100 center" id="popup-form">
-      <div class="row">
-        <div class="mb-3">
-          <input type="text" class="form-control" id="title-form" placeholder="Type your product title" required>
+    <section class="section-list space-25" id="section-list">
+      <div class="container list-group-container" id="container-list">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <ul class="list-group" id="ul-container">
+              <li class="list-group-item " aria-current="true">
+                <span class="span-icon">🛒</span>
+                <h4>An active item</h4>
+                <button class="btn btn-list" id="btn-detail">➡</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4"></div>
         </div>
-
-        <div class="mb-3 ">
-          <select class="form-select" required>
-            <option selected>Select products' type</option>
-            <option value="1">Clothing</option>
-            <option value="2">Technology</option>
-            <option value="3">Sumermarket</option>
-            <option value="4">Flights</option>
-            <option value="5">Others</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" id="FormControlTextarea" placeholder="Give me a litle description of your product 🙏" rows="3"></textarea>
-        </div>
-
-        <div class="form-button center">
-          <button type="button" class="btn btn-form">Add</button>
-        </div>  
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="section-detail" class="section-detail">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h3>Detail of your item</h3>
+            <div id="item">item loco</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
   
+  .container
+
 
   
 
