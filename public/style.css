@@ -10,10 +10,13 @@
 --divider-color: #BDBDBD;
 }
 
+
 body {
   margin: 0;
   background-color: var(--light-primary-color);
   color: var(--primary-text-color);
+  font-family: 'Coming Soon', cursive;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .center {
@@ -174,6 +177,12 @@ nav {
   display: none;
 }
 
+.card{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
 
 
 @media only screen and (max-width:769){

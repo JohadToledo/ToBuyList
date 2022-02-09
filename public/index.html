@@ -29,7 +29,9 @@
   <meta property="twitter:type" content="Web aplication"/>
   <meta property="twitter:image" content=".png"/>
   <meta property="twitter:url" content="https://twitter.com/johadToledo"/>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Source+Code+Pro:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="" type="image/png">
 </head>
 <body>
@@ -63,7 +65,7 @@
             </div>
             <div class="form-button center">
             
-            <button type="button" class="btn btn-form" id="add-btn-form">Add</button>
+            <button type="submit" class="btn btn-form" id="add-btn-form">Add</button>
             </div>  
           </form>
         </div>
@@ -71,9 +73,9 @@
     </section>
   </div>
 
-  <div class="content-page">
-    <section class="section-home space-100" id="section-home-empty">
-      <div class="container">
+  <div class="content-page ">
+    <section class="section-home space-100" id="section-home">
+      <div class="container" id="section-home-empty">
         <div class="row">
           <div class="col-md-8 center">
             <h3>Unfortunately, there is no products in your list.</h3>
@@ -81,13 +83,7 @@
           </div>
         </div>
       </div>
-      <div class="container home-bottom">
-        <div class="row">
-          <div class="home-btn-add">
-            <button class="btn-add" id="btn-add"><span>➕</span></button>
-          </div>
-        </div>
-      </div>
+      <button class="btn-add" id="btn-add"><span>➕</span></button>
     </section>
 
     <section class="section-list space-25" id="section-list">
@@ -96,11 +92,8 @@
           <div class="col-md-4"></div>
           <div class="col-md-4">
             <ul class="list-group" id="ul-container">
-              <li class="list-group-item " aria-current="true">
-                <span class="span-icon">🛒</span>
-                <h4>An active item</h4>
-                <button class="btn btn-list" id="btn-detail">➡</button>
-              </li>
+              
+              
             </ul>
           </div>
           <div class="col-md-4"></div>
@@ -108,12 +101,12 @@
       </div>
     </section>
 
-    <section id="section-detail" class="section-detail">
-      <div class="container-fluid">
+    <section id="section-detail" class="section-detail center">
+      <div class="container-fluid space-100">
         <div class="row">
           <div class="col">
             <h3>Detail of your item</h3>
-            <div id="item">item loco</div>
+            <div id="item"></div>
           </div>
         </div>
       </div>
@@ -122,7 +115,7 @@
   </div>
 
   
-  .container
+  
 
 
   
