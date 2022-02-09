@@ -16,13 +16,6 @@ btnAdd.addEventListener("click", function () {
     ;
   });
 
-  // let btnDetail = document
-  //   .getElementById("moreDetails").addEventListener("click", function () {
-  //     sectionHomeEmpty.style.display = "none";
-  //     sectionPopupForm.style.display = "none"
-  //     sectionList.style.display = "none";
-  //     sectionDetail.style.display = "flex";
-  //   });
   function back(){
     sectionHomeEmpty.style.display = "none";
     sectionPopupForm.style.display = "none"
@@ -34,16 +27,16 @@ btnAdd.addEventListener("click", function () {
 
   function btnDetail(title, type, description){
     console.log(title)
-    let newItem = `<div class="container ">
-                  <div class="row">
-                    <div class="card-detail">
-                    <h6>${type}</h6>
+    let newItem = `
+                    <div class="card">
+                    <span>${type}</span>
                       <h5>${title}</h5>
-                      <p>${description}</>
-                      <button class="btn btn-list" onclick='back()'>Back</button>
+                      <p>${description}<p/>
+                      <button class="btn btn-close" onclick='back()'><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg></span></button>
                     </div>
-                  </div>
-                </div>`
+                  `
 
     prod.innerHTML = newItem;
     
@@ -51,6 +44,7 @@ btnAdd.addEventListener("click", function () {
     sectionPopupForm.style.display = "none"
     sectionList.style.display = "none"
     sectionHome.style.display = "none"
+    btnAdd.style.display = "none"
     sectionDetail.style.display = "flex";
 
   }
@@ -65,41 +59,18 @@ let addBtnForm = document
     let description = document.getElementById("formDescription").value;
     let item = `
     <div class="card">
-    <h6>${type}</h6>
+    <span>${type}</span>
     <h5>${title}</h5>
-    <button class=btn-list onClick="btnDetail('${title}', '${type}', '${description}')">➡</button>
+    <a class=btn-list onClick="btnDetail('${title}', '${type}', '${description}')"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </svg></span></a>
     </div>`;
     ulContainer.innerHTML += item;
     
     sectionPopupForm.style.display = "none";
-    sectionHomeEmpty.style.display = "none";
+    sectionHome.style.display = "none";
     sectionList.style.display = "flex";
     
     toBuyForm.reset()
-    
-    
-  
   });
   
-  
-
-
-
-// toBuyForm.addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   let title = document.getElementById("formTitle").value;
-//   let type = document.getElementById("formType").value;
-//   let Description = document.getElementById("formDescription").value;
-
-//   let item = `<div class="container">
-//   <div class="row">
-//     <div class="card">
-//       <h5>${title}</h5>
-//       <h6>${type}</h6>
-//       <p>%{desciption}</>
-//     </div>
-//   </div>
-// </div>`;
-
-//   document.getElementById("list").innerHTML += item;
-// });

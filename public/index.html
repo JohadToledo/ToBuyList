@@ -41,6 +41,10 @@
     </nav>
   </header>
 
+  <a href='#' class="btn-add" id="btn-add"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+  </svg></span></a>
+
   <div class="content">
     <section class="section-form" id="section-popup-form">
       <div class="container popup-form space-100 center" >
@@ -54,7 +58,7 @@
               <select class="form-select" id='formType' required>
                 <option selected>Select products' type</option>
                 <option id='Clothing' value="👘">Clothing</option>
-                <option id='Technology' value="📺">Technology</option>
+                <option id='Technology' value='📺'>Technology</option>
                 <option id='Sumermarket' value="🛒">Sumermarket</option>
                 <option id='Flights' value="✈">Flights</option>
                 <option id='Others' value="🎁">Others</option>
@@ -71,32 +75,29 @@
         </div>
       </div>
     </section>
-  </div>
+  
 
-  <div class="content-page ">
-    <section class="section-home space-100" id="section-home">
+  
+    <section class="section-home space-100 " id="section-home">
       <div class="container" id="section-home-empty">
         <div class="row">
-          <div class="col-md-8 center">
+          <div class=" center">
             <h3>Unfortunately, there is no products in your list.</h3>
             <h4>Add your first item 🤗</h4>
           </div>
         </div>
       </div>
-      <button class="btn-add" id="btn-add"><span>➕</span></button>
+      
     </section>
 
-    <section class="section-list space-25" id="section-list">
-      <div class="container list-group-container" id="container-list">
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
-            <ul class="list-group" id="ul-container">
-              
-              
+    <section class="section-list center space-25" id="section-list">
+      <div class="container center list-group-container" id="container-list">
+        <div class="row center">
+          <div class="col-md center ">
+            <ul class="list-group center" id="ul-container">
+              <!--  the new element come here -->
             </ul>
           </div>
-          <div class="col-md-4"></div>
         </div>
       </div>
     </section>
@@ -106,13 +107,13 @@
         <div class="row">
           <div class="col">
             <h3>Detail of your item</h3>
-            <div id="item"></div>
+            <div class='item' id="item"></div>
           </div>
         </div>
       </div>
     </section>
-
-  </div>
+</div>
+  
 
   
   
