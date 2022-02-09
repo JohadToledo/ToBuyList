@@ -38,27 +38,28 @@
       <h1>To Buy List</h1>
     </nav>
   </header>
-  <section class="home space-100">
+
+
+  <section class="home space-100" id="home-empty">
     <div class="container">
       <div class="row">
         <div class="col-md-8 center">
           <h3>Unfortunately, there is no products in your list.</h3>
-          <h4>Add the first one 🤗</h4>
+          <h4>Add your first item 🤗</h4>
         </div>
       </div>
     </div>
     <div class="container home-bottom">
      <div class="row">
-      <div class="btn-add">
-        <span>➕</span>
+      <div class="home-btn-add">
+        <button class="btn-add" id="btn-add"><span>➕</span></button>
       </div>
      </div>
     </div>
 
   </section>
 
-
-  <div class="container list-group-container">
+  <div class="container list-group-container" id="container-list">
     <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-4">
@@ -70,6 +71,33 @@
       <div class="col-md-4"></div>
     </div>
   </div>
+
+  <div class="container popup-form space-100" id="popup-form">
+    <div class="row">
+      <div class="mb-3">
+    <input type="text" class="form-control" id="title-form" placeholder="Type your product title" required>
+  </div>
+    </div>
+
+  <div class="mb-3 ">
+    <select class="form-select" aria-label="Default select example" required>
+      <option selected>Select products type</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <textarea class="form-control" id="FormControlTextarea" placeholder="Give me a litle description of your product 🙏" rows="3"></textarea>
+  </div>
+
+
+  </div>
+  
+
+  
+
+
 
   <script src="tobuy.js"></script>
 </body>
