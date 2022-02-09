@@ -59,40 +59,48 @@
 
   </section>
 
-  <div class="container list-group-container" id="container-list">
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <ul class="list-group" id="ul-container">
-          <li class="list-group-item active" aria-current="true">An active item</li>
-        </ul>
-        <button type="button" class="btn btn-primary" id="add">Add</button>
+  <section class="section-list">
+    <div class="container list-group-container" id="container-list">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <ul class="list-group" id="ul-container">
+            <li class="list-group-item active" aria-current="true">An active item</li>
+          </ul>
+          <button type="button" class="btn btn-primary" id="add">Add</button>
+        </div>
+        <div class="col-md-4"></div>
       </div>
-      <div class="col-md-4"></div>
     </div>
-  </div>
+  </section>
 
-  <div class="container popup-form space-100" id="popup-form">
-    <div class="row">
-      <div class="mb-3">
-    <input type="text" class="form-control" id="title-form" placeholder="Type your product title" required>
-  </div>
+  <section class="section-form">
+    <div class="container popup-form space-100 center" id="popup-form">
+      <div class="row">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="title-form" placeholder="Type your product title" required>
+        </div>
+
+        <div class="mb-3 ">
+          <select class="form-select" required>
+            <option selected>Select products' type</option>
+            <option value="1">Clothing</option>
+            <option value="2">Technology</option>
+            <option value="3">Sumermarket</option>
+            <option value="4">Flights</option>
+            <option value="5">Others</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="FormControlTextarea" placeholder="Give me a litle description of your product 🙏" rows="3"></textarea>
+        </div>
+
+        <div class="form-button center">
+          <button type="button" class="btn btn-form">Add</button>
+        </div>  
+      </div>
     </div>
-
-  <div class="mb-3 ">
-    <select class="form-select" aria-label="Default select example" required>
-      <option selected>Select products type</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-  </div>
-  <div class="mb-3">
-    <textarea class="form-control" id="FormControlTextarea" placeholder="Give me a litle description of your product 🙏" rows="3"></textarea>
-  </div>
-
-
-  </div>
+  </section>
   
 
   
