@@ -16,8 +16,7 @@ body {
   margin: 0;
   background-color: var(--body-color);
   color: var(--text-primary-color);
-  font-family: "Coming Soon", cursive;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .center {
@@ -82,7 +81,7 @@ nav {
 .btn-add svg {
   width: 50px;
   height: 50px;
-  color: var(--text-primary-color);
+  color: #FF97BB;
 }
 
 .btn-close {
@@ -96,12 +95,15 @@ nav {
   text-decoration: none;
   text-align: center;
   z-index: 100;
+  color: #FF97BB;
+  background: none;
+  opacity: 1;
 }
 
 .btn-close svg {
   width: 50px;
   height: 50px;
-  color: var(--text-primary-color);
+  color: #FF97BB;;
 }
 
 .section-form {
@@ -282,8 +284,8 @@ p {
 .background-Others{
   background: linear-gradient(
     90deg,
-    rgb(20, 255, 145) 0%,
-    rgb(83, 221, 55) 100%
+    rgb(250, 32, 108) 0%,
+    rgb(255, 151, 187) 100%
   );
 }
 
@@ -314,7 +316,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .btn-add {
-    display: none;
+    display: none !important;
   }
 
   .content {
