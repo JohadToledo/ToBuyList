@@ -314,6 +314,18 @@ p {
   );
 }
 
+.icon-img{
+  filter: invert(100%);
+}
+
+.h5-title{
+  font-size: 30px;
+}
+
+.p-description{
+ font-size: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   .btn-add {
     display: none !important;
