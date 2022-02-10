@@ -24,7 +24,6 @@ function back() {
 }
 
 function btnDetail(title, type, description) {
-  console.log(title);
   let newItem = `
                     <div class="card-detail">
                     <span>${type}</span>
@@ -37,6 +36,19 @@ function btnDetail(title, type, description) {
                   `;
 
   prod.innerHTML = newItem;
+console.log(type)
+if(type == 'Sumermarket') {
+  document.querySelector('.card-detail').classList.add('background-Sumermarket')
+}else if(type === '👘'){
+  document.querySelector('.card-detail').classList.add('background-Clothing')
+}else if(type == 'Technology'){
+  document.querySelector('.card-detail').classList.add('background-Technology')
+}else if(type == 'FlightsOthers'){
+  document.querySelector('.card-detail').classList.add('background-FlightsOthers')
+}else(type == 'Others')
+  document.querySelector('.card-detail').classList.add('background-Others')
+
+
 
   sectionHomeEmpty.style.display = "none";
   sectionPopupForm.style.display = "none";
@@ -66,6 +78,7 @@ let addBtnForm = document
   
       sectionPopupForm.style.display = "none";
       sectionHome.style.display = "none";
+      sectionDetail.style.display = "none";
       sectionList.style.display = "flex";
   
       toBuyForm.reset();
